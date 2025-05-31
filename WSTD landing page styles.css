@@ -1,0 +1,184 @@
+/* === TOP HEADER (Logo + Tagline) — Scrolls away === */
+.top-header {
+  background-color: #0f0f0f;
+  color: #00ffcc;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 255, 204, 0.1);
+}
+
+.top-header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-shadow: 0 0 5px #00ffcc;
+  letter-spacing: 2px;
+}
+
+.top-header h1 img {
+  width: 60px;
+  height: auto;
+}
+
+.top-header p {
+  margin: 5px 0 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* === STICKY NAVIGATION BAR (Remains Fixed) === */
+.sticky-nav {
+  background-color: #0a0a0a;
+  padding: 8px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 2px 5px rgba(0, 255, 204, 0.15);
+}
+
+.sticky-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sticky-nav ul li a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border: 1px solid #00ffcc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.sticky-nav ul li a:hover {
+  background-color: #00ffcc;
+  color: #0f0f0f;
+  box-shadow: 0 0 5px #00ffcc;
+}
+
+/* === BODY PADDING TO AVOID OVERLAP === */
+body {
+  margin: 0;
+  padding-top: 180px; /* Adjust this value based on height of both header + nav */
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+}
+/* === COMMUNITY SECTION STYLING === */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 255, 204, 0.1);
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Paragraph under heading */
+section p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* === Community Links List === */
+section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Each Community Link Item */
+section ul li {
+  background-color: #0f0f0f;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #00ffcc33;
+  transition: 0.3s ease;
+}
+
+section ul li:hover {
+  background-color: #00ffcc10;
+  border-color: #00ffcc;
+  transform: translateY(-2px);
+}
+
+/* Social Icons */
+section ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Link Text */
+section ul li a {
+  text-decoration: none;
+  color: #00ffcc;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+section ul li a:hover {
+  text-shadow: 0 0 5px #00ffcc;
+}
+/* === GLOBAL SECTION STYLING WITH DEFAULT BORDER === */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #111;
+  border-radius: 12px;
+  border: 1px solid #00ffcc33; /* Default border color */
+  box-shadow: 0 4px 12px rgba(0, 255, 204, 0.05);
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Paragraphs inside sections */
+section p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+section:hover {
+  border-color: #00ffcc;
+  box-shadow: 0 0 12px #00ffcc33;
+  transition: 0.3s ease;
+}
