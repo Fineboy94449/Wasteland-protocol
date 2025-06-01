@@ -4,49 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="WSTD landing page styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=YOUR_FONT_NAME&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Wasteland Protocol</title>
 </head>
 <body>
-
-  <!-- Logo and Heading Area (scrolls away) -->
+  <!-- Header Section -->
   <header class="top-header">
-  <div>
-    <h1>
-      <img src="img logos/WASTELAND_DAO-removebg-preview.png" alt="Wasteland Protocol Logo" width="60">
-      WELCOME TO WASTELAND PROTOCOL
-    </h1>
-    <p>Reclaim. Recycle. Rise Again.</p>
-  </div>
+    <div class="container center-text">
+      <h1>
+        <img src="img logos/WASTELAND_DAO-removebg-preview.png" alt="Wasteland Protocol Logo" width="60">
+        WELCOME TO WASTELAND PROTOCOL
+      </h1>
+      <p>Reclaim. Recycle. Rise Again.</p>
+    </div>
   </header>
 
-<!-- Sticky Navigation Bar (always visible) -->
- <nav class="sticky-nav">
-  <ul>
-    <li><a href="#what-is-wasteland">What is Wasteland Protocol?</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#product-types">Our Product Types</a></li>
-    <li><a href="#co-founders">Co-Founders</a></li>
-    <li><a href="#careers">Careers</a></li>
-  </ul>
- </nav>
-  <section>
+  <!-- Sticky Navigation Bar -->
+  <nav class="sticky-nav">
+    <ul>
+      <li><a href="#what-is-wasteland">What is Wasteland Protocol?</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#product-types">Our Product Types</a></li>
+      <li><a href="#co-founders">Co-Founders</a></li>
+      <li><a href="#careers">Careers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Join Community Section -->
+  <section id="community-section" class="center-text">
     <h2>Join the Community</h2>
     <p>Connect with fellow Wastelanders, share ideas, and stay updated on the latest developments. Join our community channels:</p>
-    <ul>
-      <li><a href="https://twitter.com/wasteland" target="_blank"><img src="img social logos/1691832581twitter-x-icon-png.png">Twitter</a> </li>
-      <li><a href="https://t.me/wastelandprotocol" target="_blank"><img src="img social logos/telegram.png">Telegram</a></li>
-      <li><a href="mailto:info@wasteland.com"><img src="img social logos/kisspng-discord-social-media-portable-network-graphics-cli-1713924104892.webp"> Dicord</a></li>
+    <ul class="community-links">
+      <li><a href="https://twitter.com/wasteland" target="_blank"><img src="img social logos/1691832581twitter-x-icon-png.png" alt="Twitter">Twitter</a></li>
+      <li><a href="https://t.me/wastelandprotocol" target="_blank"><img src="img social logos/telegram.png" alt="Telegram">Telegram</a></li>
+      <li><a href="mailto:info@wasteland.com"><img src="img social logos/kisspng-discord-social-media-portable-network-graphics-cli-1713924104892.webp" alt="Discord">Discord</a></li>
     </ul>
   </section>
 
-  <section>
+  <!-- About Section -->
+  <section id="what-is-wasteland" class="center-text">
     <h2>What is Wasteland Protocol?</h2>
     <p>Wasteland Protocol is a DeFi ecosystem that gives new life to failed meme tokens through innovative recycling and staking mechanisms.</p>
     <a href="https://docs.google.com/document/d/1_C-YWOz0TZyp-Aw1xQGG-hCEQZLKq4MCuhmIvFCSB-c/edit?usp=sharing" target="_blank">Read the Whitepaper</a>
   </section>
 
-  <section>
+  <!-- Video Section -->
+  <section id="video-section" class="center-text">
+    <h2>🎥 Why Wasteland?</h2>
+    <p class="video-intro">Stay updated with key announcements, tutorials, and community highlights from our marketing team.</p>
+    <div class="video-gallery">
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Wasteland Protocol Introduction" frameborder="0" allowfullscreen></iframe>
+        <p>Wasteland Protocol: Recycle & Rise</p>
+      </div>
+    </div>
+    <p class="video-note">🎜 Want to feature your video? Reach out to our marketing team!
+    </p>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="center-text">
     <h2>Roadmap</h2>
     <ul>
       <li><strong>Phase 1:</strong> XP Collection & Sacrifice Vault</li>
@@ -56,7 +73,18 @@
     </ul>
   </section>
 
-  <section>
+  <!-- Disclaimer Section -->
+  <section class="disclaimer-warning center-text">
+    <h2>⚠️ Disclaimer & Warning</h2>
+    <p>
+      Wasteland Protocol is an experimental DeFi project. Participation involves risk, including the potential loss of your funds.
+      <strong>Always do your own research</strong> before engaging with any features or products.<br><br>
+      Nothing on this site constitutes financial advice. By using Wasteland Protocol, you acknowledge and accept all associated risks.
+    </p>
+  </section>
+
+  <!-- Product Types Section -->
+  <section id="product-types" class="center-text">
     <h2>Our Product Types</h2>
     <ul>
       <li>Sacrifice Vault – Earn XP from failed tokens</li>
@@ -66,9 +94,10 @@
     </ul>
   </section>
 
-  <section>
+  <!-- Co-Founders Section -->
+  <section id="co-founders" class="center-text">
     <h2>Co-Founders</h2>
-    <div>
+    <div class="founder-profiles">
       <div>
         <img src="founder1.jpg" alt="Founder 1" width="100">
         <p><strong>Thubelihle Mahlangu</strong><br>Lead Strategist</p>
@@ -79,41 +108,86 @@
       </div>
     </div>
   </section>
-  <section>
+
+  <!-- Notice Section -->
+  <section id="nb-info" class="notice-section center-text">
+    <h2>⚠️ NB: Important Information for Applicants</h2>
+    <p>Wasteland Protocol operates as a mission-driven initiative, grounded in NGO-style principles. There are <strong>no guaranteed salaries</strong> or upfront wages.</p>
+    <p>Our priority is building real solutions for real problems. When the work brings value to the community, <strong>compensation may follow</strong>—driven by project success and community support.</p>
+    <p>If you’re motivated by purpose and want to help shape the future of decentralized finance, <strong>join us to build first</strong>. Rewards follow results.</p>
+  </section>
+
+  <!-- Careers Form Section -->
+  <section id="careers" class="center-text">
     <h2>Careers – Be Part of Wasteland Protocol</h2>
-    <form action="mailto:info@wasteland.com" method="post" enctype="text/plain">
-      <label for="name">Full Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="role">Role Interested In:</label><br>
-      <input type="text" id="role" name="role" required><br><br>
-
-      <label for="message">Tell us about yourself:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-      <label for="github">GitHub Profile (optional):</label><br>
-      <input type="url" id="github" name="github" placeholder="https://github.com/yourprofile"><br><br>
-
-      <label for="x">X (Twitter) Profile (optional):</label><br>
-      <input type="url" id="x" name="x" placeholder="https://x.com/yourprofile"><br><br>
-
-      <label for="website">Project Website (optional):</label><br>
-      <input type="url" id="website" name="website" placeholder="https://yourproject.com"><br><br>
-
+    <form id="careerForm" action="mailto:info@wasteland.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="role">Role Interested In:</label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Select a role</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="community-manager">Community Manager</option>
+          <option value="marketing">Marketing</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="github">GitHub Profile (optional):</label>
+        <input type="url" id="github" name="github" placeholder="https://github.com/yourprofile">
+      </div>
+      <div class="form-group">
+        <label for="x">X (Twitter) Profile (optional):</label>
+        <input type="url" id="x" name="x" placeholder="https://x.com/yourprofile">
+      </div>
+      <div class="form-group">
+        <label for="website">Project Website (optional):</label>
+        <input type="url" id="website" name="website" placeholder="https://yourproject.com">
+      </div>
+      <div class="form-group">
+        <label for="message">Tell us about yourself:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
       <button type="submit">Apply Now</button>
     </form>
   </section>
 
-  <footer>
-    <p>Follow us</p>
-    <a href="https://twitter.com/wasteland">Twitter</a> | 
-    <a href="https://t.me/wastelandprotocol">Telegram</a> | 
-    <a href="mailto:info@wasteland.com">Email Us</a>
-    <p>&copy; 2025 Wasteland Protocol</p>
+  <!-- Footer Section -->
+  <footer class="site-footer center-text">
+    <div class="footer-social">
+      <p>Follow us</p>
+      <a href="https://twitter.com/wasteland" target="_blank" aria-label="Twitter">
+        <img src="img social logos/1691832581twitter-x-icon-png.png" alt="Twitter" width="24">
+      </a>
+      <a href="https://t.me/wastelandprotocol" target="_blank" aria-label="Telegram">
+        <img src="img social logos/telegram.png" alt="Telegram" width="24">
+      </a>
+      <a href="mailto:info@wasteland.com" aria-label="Email">
+        <img src="img social logos/kisspng-discord-social-media-portable-network-graphics-cli-1713924104892.webp" alt="Email" width="24">
+      </a>
+    </div>
+    <nav class="footer-nav">
+      <a href="#what-is-wasteland">About</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#careers">Careers</a>
+      <a href="https://docs.google.com/document/d/1_C-YWOz0TZyp-Aw1xQGG-hCEQZLKq4MCuhmIvFCSB-c/edit?usp=sharing" target="_blank">Whitepaper</a>
+    </nav>
+    <div class="footer-disclaimer">
+      <p>Wasteland Protocol is an experimental DeFi project. Not financial advice. Always DYOR.</p>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2025 Wasteland Protocol. All rights reserved.</p>
+    </div>
   </footer>
-
+  <script src="WSTD landing page java.js"></script>
 </body>
 </html>
+
